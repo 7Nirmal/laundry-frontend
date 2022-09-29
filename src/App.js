@@ -11,7 +11,7 @@ import OrderDetails from "./pages/orderdetails/Orderdetails";
 import MyLaundry from "./pages/mylaundry/Mylaundry";
 import Singleorder from "./pages/singleorder/Singleorder";
 
-export const API = "http://localhost:8000";
+export const API = "https://dailylaundry.herokuapp.com";
 function App() {
   return (
     <>
