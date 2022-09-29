@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import "./orderdetail.css"
+import "./singleorder.css"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { API } from '../../App';
 import { useGlobalContext } from '../../context/Context';
 import axios from "axios";
 
-const OrderDetails = () => {
+const Singleorder = () => {
 
     const navigate = useNavigate();
 
@@ -112,4 +112,4 @@ console.log(user.token);
   )
 }
 
-export default OrderDetails
+export default Singleorder

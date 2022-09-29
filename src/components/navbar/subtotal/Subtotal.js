@@ -30,7 +30,7 @@ const SubTotal = () => {
 
   deliveryCharge = deliveryMethod?.rate ? deliveryMethod.rate : 0;
 
-  const grandTotal = deliveryCharge + subTotal;
+  const grandTotal = parseInt(deliveryCharge + subTotal);
 
   useEffect(() => {
     let items = 0;

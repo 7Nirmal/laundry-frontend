@@ -8,11 +8,13 @@ import Cart from "./pages/cart/Cart";
 import SchedulePickup from "./pages/schedulepickup/Schedulepickup";
 import CheckoutPage from "./pages/checkout/Checkout";
 import OrderDetails from "./pages/orderdetails/Orderdetails";
+import MyLaundry from "./pages/mylaundry/Mylaundry";
+import Singleorder from "./pages/singleorder/Singleorder";
 
 export const API = "http://localhost:8000";
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar/>
      <Routes>
       <Route path="/" element={<LaundryHome/>}/>
@@ -23,15 +25,14 @@ function App() {
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/schedulePickup" element={<SchedulePickup/>}/>
       <Route path="/checkout" element={<CheckoutPage/>}/>
-      <Route path="/orderSuccess/:insertedId" element={<OrderDetails/>}/>
- 
-
-
+      <Route path="/orderSuccess/:id" element={<OrderDetails/>}/>
+      <Route path="/myLaundry" element={<MyLaundry/>}/>
+      <Route path="/orderDetails/:id" element={<Singleorder/>}/>
 
 
      </Routes>
       
-    </div>
+    </>
   );
 }
 
