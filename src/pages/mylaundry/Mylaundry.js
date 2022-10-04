@@ -28,8 +28,9 @@ const MyLaundry = () => {
 
     const getUserOrders = async() => {
         fetch(`${API}/orders/userGetOrders`, {
-            method:'GET',
-            headers: { "Content-Type": "application/json", "x-auth-token":user.token}
+            method:'POST',
+            headers: { "Content-Type": "application/json"},
+            body: JSON.stringify({id: user._id})
                 })
         .then((data)=> data.json())
         .then((details)=> setMyOrders(details))

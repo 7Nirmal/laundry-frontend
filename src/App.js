@@ -10,8 +10,14 @@ import CheckoutPage from "./pages/checkout/Checkout";
 import OrderDetails from "./pages/orderdetails/Orderdetails";
 import MyLaundry from "./pages/mylaundry/Mylaundry";
 import Singleorder from "./pages/singleorder/Singleorder";
+import Services from "./pages/products/Services";
+import Categories from "./pages/products/Categories";
+import Products from "./pages/products/Products";
+import EditProduct from "./pages/products/Editpage";
+import Orders from "./pages/orders/Orders";
+import ViewOrders from "./pages/vieworder/Vieworder";
 
-export const API = "https://dailylaundry.herokuapp.com";
+export const API = "http://localhost:8000";
 function App() {
   return (
     <>
@@ -28,8 +34,12 @@ function App() {
       <Route path="/orderSuccess/:id" element={<OrderDetails/>}/>
       <Route path="/myLaundry" element={<MyLaundry/>}/>
       <Route path="/orderDetails/:id" element={<Singleorder/>}/>
-
-
+      <Route path="/services" element={<Services/>}/>
+      <Route path="/categories/:id" element={<Categories/>}/>
+      <Route path="/products/:id" element={<Products/>}/>
+      <Route path="/editProducts/:id" element={<EditProduct/>}/>
+      <Route path="/orders" element={<Orders/>}/>
+      <Route path="/viewOrder/:id" element={<ViewOrders/>}/>
      </Routes>
       
     </>

@@ -102,6 +102,8 @@ const UserLogin = () => {
                             <input className="userInput passwordLogin" type="password" placeholder="enter your password" value={singleUser.password} onChange={handleChange} id="password" name="password"></input>
                         </div>
                         <Button className="submitBtn" variant="contained" size="medium" onClick={handleLogin}>login</Button>
+                        <Button style={{"margin-left":"10px"}} className="submitBtn" variant="contained" size="medium" onClick={handleLogin}>Admin Login</Button>
+
                     </form>
                     <div className='demo-credentials'>
                         <div className='demo-credentials-header'>
