@@ -17,7 +17,7 @@ import EditProduct from "./pages/products/Editpage";
 import Orders from "./pages/orders/Orders";
 import ViewOrders from "./pages/vieworder/Vieworder";
 
-export const API = "http://localhost:8000";
+export const API = "https://dailylaundry.herokuapp.com";
 function App() {
   return (
     <>
